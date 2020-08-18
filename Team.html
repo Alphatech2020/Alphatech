@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html oncontextmenu="window.alert('right click not allowed');return false;">
+  <head>
+    <title>svg</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+	/>
+	
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  
+  <script>
+    $(window).load(function() {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");
+    });
+  </script>
+    <style type="text/css">
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+      }
+      
+      #particles-js {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #000;
+
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      path {
+        stroke: #fff;
+        fill: #fff;
+        stroke-dasharray: 1800;
+        opacity: 10;
+      }
+      
+      .team {
+        position: absolute;
+        top: 20%;
+		
+      }
+      .col-md-4 {
+        margin-top: 30px !important;
+      }
+      h4 {
+        color: white;
+      }
+      strong {
+        color: white;
+        font-style: italic;
+        font-family: "Pangolin", cursive;
+      }
+      img {
+        width: 250px;
+        height: 250px;
+      }
+
+    </style>
+    
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="se-pre-con"></div>
+	<div class="container team" style="align-content: center;">
+		<center style="color: white;font-family: 'Pangolin', cursive;font-size: 25px;margin-bottom: 10px;font-weight: bold;">OUR TEAM</center>
+	  <hr style="background-color: white;">
+		<div class="row text-center">
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/shreya.jpeg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Shreya Shah</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Co-ordinator of Presentation and Group Discussion</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919163510017"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.instagram.com/diverheart/?hl=en"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #dd5087;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-instagram text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/sohan.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Sohan Kundu</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>PR of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919836585477"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/IamSohanKundu"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/atreyi.jpeg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Atreyi Guha</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Co-ordinator of Technical Presentation and GD</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919831158900"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/atreyi.guha.1"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/anjali.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Anjali Sinha</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Content Writer of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+918240946894"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/profile.php?id=100011960085734"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/romit.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Romit Roy</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Designer of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919903293098"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.instagram.com/romit_jrr/"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #dd5087;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-instagram text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/arnita.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Arnita Banerjee</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Designer(2) of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+918777681768"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.instagram.com/_inkscriber_/?hl=en"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #dd5087;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-instagram text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/astha.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">
+            Aastha Chakraborty
+          </h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Co-ordinator of Debate and Extempore</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919038592032"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.instagram.com/aasthachakrabortyyy/"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #dd5087;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-instagram text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/payel.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Payal Sengupta</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Co-ordinator(2) of Debate and Extempore</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+918584945412"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.instagram.com/shenguptoooo/"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #dd5087;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-instagram text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/saikat.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Saikat Paul</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Graphics Designer of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919836404108"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/stop.checking.my.profile.get.lost"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/sujit.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Sujit Sinha</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Website Developer of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919748179215"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/jener.poreli"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/sohom.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Sohom Das</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Website Developer(2) of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+916290276977"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/sohom.das.94043"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/ishan.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Ishan Chaudhuri</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Website Developer(3) of Alphatech 2020</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+918420706708"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.linkedin.com/in/ishan-chaudhuri-80856b1b0"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #0570ad;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-linkedin text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 wow animated fadeIn slower">
+          <div class="avatar mx-auto">
+            <img
+              src="image/sankarson.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Sankarson Das</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Co-ordinator of Quiz</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+919836927502"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/bittu.hazard"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+        <div class="col-md-4 wow animated fadeIn slower mb-5">
+          <div class="avatar mx-auto">
+            <img
+              src="image/raj.jpg"
+              class="rounded z-depth-1-half"
+              alt="Sample avatar"
+            />
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">Rajsekhar Dutta</h4>
+          <h6 class="text-uppercase grey-text mb-3">
+            <strong>Co-ordinator(2) of Quiz</strong>
+          </h6>
+          <!--Linkedin -->
+          <a
+            href="tel:+917003164569"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #62d857;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-phone text-white"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://www.facebook.com/rajsekhar.dutta.9216"
+            type="button"
+            style="
+              border-radius: 70%;
+              box-shadow: 30px;
+              width: 30px;
+              background: #3b5998;
+            "
+            class="btn-floating btn-sm mx-1 mb-0 btn-tw"
+          >
+            <i class="fa fa-facebook text-white"></i>
+          </a>
+          <!--Pinterest -->
+        </div>
+      </div>
+    </div>
+
+    <div class="toggle"></div>
+    <div class="overlay"></div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">Alphatech 2020</a></li>
+        <li><a href="Events.html">Events</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        
+      </ul>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $(".overlay").toggleClass("active");
+          $(".menu").toggleClass("active");
+        });
+      });
+    </script>
+
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html oncontextmenu="window.alert('right click not allowed');return false;">
+  <head>
+    <title>svg</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+	/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+  </script>
+   <script>
+    $(window).load(function() {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");
+    });
+  </script>
+    <style type="text/css">
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+      }
+      
+      #particles-js {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #000;
+
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      path {
+        stroke: #fff;
+        fill: #fff;
+        stroke-dasharray: 1800;
+        opacity: 10;
+      }
+      
+      .team {
+        position: absolute;
+        top: 20%;
+		
+      }
+      .col-md-4 {
+        margin-top: 30px !important;
+      }
+      h4 {
+        color: white;
+      }
+      strong {
+        color: white;
+        font-style: italic;
+        font-family: "Pangolin", cursive;
+      }
+ 
+      .text{
+        color: #fff;
+        font-family: 'Coming Soon', cursive;
+        font-size: 20px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="se-pre-con"></div>
+	<div class="container team">
+    <center style="color: white;font-family: 'Pangolin', cursive;font-size: 25px;margin-bottom: 10px;font-weight: bold;">Alphatech 2020</center>
+	  <hr style="background-color: white;">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="text animated fadeInDown slower">
+          The Department of Electronics and Communication Engineering presents ALPHATECH 2020- the most anticipated Intra- Departmental fest of the year.
+All of us might be missing the on-campus atmosphere this event offers, but that's no excuse to let your skills go waste.
+From Presentations to Extempores and Quiz, there's a lot in store for you.
+Let's take forward the legacy of this event and make it at par with all it's predecessors.
+Come join us and make this Alphatech a huge success!!
+        </span>
+      </div>
+    </div><br>
+    <button class="btn btn-danger mb-3" style="border-radius:20px;color: #fff; "><a style="text-decoration: none;color: white;" href="https://www.facebook.com/Alphatech2k20">Like Us</a></button>
+  </div>
+  
+    <div class="toggle"></div>
+    <div class="overlay"></div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a href="Events.html">Events</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Team.html">Our Team</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $(".overlay").toggleClass("active");
+          $(".menu").toggleClass("active");
+        });
+      });
+    </script>
+
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

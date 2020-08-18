@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html oncontextmenu="window.alert('right click not allowed');return false;">
+<head>
+	<title>svg</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+			height: 100vh;
+		}
+
+		#particles-js{
+			height: 100%;
+			background: black;
+			z-index: 1000;
+		}
+		path{
+			stroke: #fff;
+			fill: #fff;
+			stroke-dasharray: 1800;
+			opacity: 10;
+		}
+		#clock{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+    width: 100%;
+    position: absolute;
+	top: 70%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+	width: 40%;
+	
+	white-space: nowrap;
+   
+    
+		}
+		
+		#demo{
+			font-size: 20px;
+			color: white;
+			display: inline-block;
+			font-weight: bold;
+			font-family: 'Orbitron', sans-serif;
+			padding-right: 10px;
+			padding-left: 10px;
+
+		}
+	
+	</style>
+	<script type="text/javascript">
+	var dest=new Date("august 22, 2020 15:00:00").getTime();
+	var x= setInterval(function(){
+	var now = new Date().getTime();
+	var diff = dest-now;
+	var days=Math.floor(diff/(1000*60*60*24));
+	var hours=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+	var minutes=Math.floor((diff%(1000*60*60))/(1000*60))
+	var seconds=Math.floor((diff%(1000*60))/1000);
+	document.getElementById("demo").innerHTML=days +"d, "+hours+"hrs: "+minutes+ "m: "+seconds +"s" 
+},1000);
+</script>
+
+</head>
+<body style="overflow:hidden;">
+	<div id="particles-js"></div>
+<div class="wrapper">
+	
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
+<style type="text/css">
+   .st0{fill:#fff;stroke:#fff;stroke-width:3px;stroke-dasharray: 4800;stroke-dashoffset: 4800;
+	animation: animate 3s cubic-bezier(0,0.23,1,.1);
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset:4800;
+	}
+	30%{
+		opacity: 10;
+		fill: none;
+		stroke-dashoffset:4800;
+	}
+	90%{
+		fill:rgba(255,255,255,0);
+	}
+	100%{
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+		stroke-dashoffset:0;
+	}
+}
+   .st1{fill:#FFFFFF;stroke:#000000;stroke-width:3;}
+</style>
+<polygon class="st0" points="1519.5,1471.5 1390.5,1471.5 674.5,1042.5 725.5,931.5 1292.5,1268.5 999.5,636.5 841.5,972.5 
+   736.5,911.5 996.5,351.5 "/>
+<polygon class="st0" points="665.5,1064.5 768.5,1126.5 608.5,1471.5 476.5,1471.5 "/>
+<g>
+   <path class="st1" d="M460.15,1629.99h-35.24l-5.45,17.29h-23.94l33.51-93.1h26.87l33.52,93.1H465.6L460.15,1629.99z M454.7,1612.7
+	   l-12.24-38.7l-12.24,38.7H454.7z"/>
+   <path class="st1" d="M562.96,1625.86v21.41h-57.59v-93.1h22.88v71.68H562.96z"/>
+   <path class="st1" d="M653.26,1587.56c0,21.94-16.76,32.18-36.97,32.18h-11.97v27.53h-22.74v-93.1h34.71
+	   C639.43,1554.18,653.26,1567.48,653.26,1587.56z M630.12,1587.56c0-7.18-5.05-11.84-13.83-11.84h-11.97v23.67h11.97
+	   C624.54,1599.4,630.12,1595.67,630.12,1587.56z"/>
+   <path class="st1" d="M751.15,1554.18v93.1h-22.74v-36.17h-33.78v36.17h-22.74v-93.1h22.74v35.38h33.78v-35.38H751.15z"/>
+   <path class="st1" d="M831.75,1629.99H796.5l-5.45,17.29h-23.94l33.51-93.1h26.87l33.51,93.1H837.2L831.75,1629.99z M826.3,1612.7
+	   l-12.24-38.7l-12.24,38.7H826.3z"/>
+   <path class="st1" d="M932.7,1575.72h-21.81v71.55h-22.74v-71.55h-21.81v-21.54h66.36V1575.72z"/>
+   <path class="st1" d="M1009.83,1625.86v21.41h-58.52v-93.1h57.32v21.54h-34.58v14.36h30.32v20.35h-30.32v15.43H1009.83z"/>
+   <path class="st1" d="M1091.1,1618.42l19.02,12.5c-8.38,11.17-21.68,18.09-37.64,18.09c-27.53,0-47.35-20.61-47.35-48.28
+	   c0-27.53,19.82-48.14,47.35-48.14c15.96,0,29.26,6.92,37.64,17.95l-19.02,12.5c-3.99-5.05-10.24-8.51-18.62-8.51
+	   c-16.23,0-24.47,13.03-24.47,26.2c0,13.17,8.25,26.33,24.47,26.33C1080.86,1627.06,1087.11,1623.6,1091.1,1618.42z"/>
+   <path class="st1" d="M1206.01,1554.18v93.1h-22.74v-36.17h-33.78v36.17h-22.74v-93.1h22.74v35.38h33.78v-35.38H1206.01z"/>
+   <path class="st1" d="M1332.36,1625.86v21.41h-63.97v-17.95c6.12-5.85,16.49-16.36,25.14-25.93c7.18-7.98,14.23-15.16,14.23-20.61
+	   c0-4.12-2.66-8.64-8.91-8.64c-6.38,0-9.44,4.65-9.97,9.71l-21.68-4.92c3.06-17.82,16.49-26.33,32.98-26.33
+	   c18.89,0,30.86,11.17,30.86,28.99c0,13.57-9.31,23.81-29.53,44.29H1332.36z"/>
+   <path class="st1" d="M1427.32,1600.73c0,25.93-11.97,48.28-39.9,48.28c-27.8,0-39.77-22.34-39.77-48.28
+	   c0-25.93,11.97-48.14,39.77-48.14C1415.35,1552.58,1427.32,1574.79,1427.32,1600.73z M1404.58,1600.73
+	   c0-13.57-4.52-26.2-17.16-26.2c-12.5,0-17.02,12.63-17.02,26.2c0,13.7,4.52,26.33,17.02,26.33
+	   C1400.05,1627.06,1404.58,1614.43,1404.58,1600.73z"/>
+   <path class="st1" d="M1506.45,1625.86v21.41h-63.97v-17.95c6.12-5.85,16.49-16.36,25.14-25.93c7.18-7.98,14.23-15.16,14.23-20.61
+	   c0-4.12-2.66-8.64-8.91-8.64c-6.38,0-9.44,4.65-9.97,9.71l-21.68-4.92c3.06-17.82,16.49-26.33,32.98-26.33
+	   c18.89,0,30.86,11.17,30.86,28.99c0,13.57-9.31,23.81-29.53,44.29H1506.45z"/>
+   <path class="st1" d="M1601.42,1600.73c0,25.93-11.97,48.28-39.9,48.28c-27.8,0-39.77-22.34-39.77-48.28
+	   c0-25.93,11.97-48.14,39.77-48.14C1589.45,1552.58,1601.42,1574.79,1601.42,1600.73z M1578.67,1600.73
+	   c0-13.57-4.52-26.2-17.16-26.2c-12.5,0-17.02,12.63-17.02,26.2c0,13.7,4.52,26.33,17.02,26.33
+	   C1574.15,1627.06,1578.67,1614.43,1578.67,1600.73z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+
+</div>
+<center><ul id="clock">
+		<li id="demo"></li>
+	</ul></center>
+<div class="toggle"></div>
+<div class="overlay"></div>
+<div class="menu">
+<ul>
+
+<li><a href="About.html">Alphatech 2020</a></li>
+<li><a href="Events.html">Events</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Team.html">Our Team</a></li>
+
+
+</ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.toggle').click(function(){
+$('.toggle').toggleClass('active');
+$('.overlay').toggleClass('active');
+$('.menu').toggleClass('active');
+});
+});
+</script>
+
+<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
