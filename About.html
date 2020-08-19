@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html oncontextmenu="window.alert('right click not allowed');return false;">
   <head>
-    <title>svg</title>
+    <title>Alphatech2K20</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link
@@ -26,12 +26,7 @@
 	<script>
 		new WOW().init();
   </script>
-   <script>
-    $(window).load(function() {
-      // Animate loader off screen
-      $(".se-pre-con").fadeOut("slow");
-    });
-  </script>
+   
     <style type="text/css">
       body {
         padding: 0;
@@ -59,7 +54,8 @@
       .team {
         position: absolute;
         top: 20%;
-		
+    margin-right: auto;
+    margin-right:auto ;
       }
       .col-md-4 {
         margin-top: 30px !important;
@@ -81,15 +77,16 @@
      
     </style>
   </head>
-  <body>
+  <body style="overflow-y: none;">
     <div id="particles-js"></div>
     <div class="se-pre-con"></div>
-	<div class="container team">
-    <center style="color: white;font-family: 'Pangolin', cursive;font-size: 25px;margin-bottom: 10px;font-weight: bold;">Alphatech 2020</center>
+    
+	<div class="container-fluid team">
+    <center style="color: white;font-family: 'Pangolin', cursive;font-size: 25px;margin-bottom: 10px;font-weight: bold;" class="header_e">Alphatech 2020</center>
 	  <hr style="background-color: white;">
     <div class="row">
       <div class="col-md-12">
-        <span class="text animated fadeInDown slower">
+        <span class="text animated fadeInDown slower desc">
           The Department of Electronics and Communication Engineering presents ALPHATECH 2020- the most anticipated Intra- Departmental fest of the year.
 All of us might be missing the on-campus atmosphere this event offers, but that's no excuse to let your skills go waste.
 From Presentations to Extempores and Quiz, there's a lot in store for you.
@@ -98,7 +95,7 @@ Come join us and make this Alphatech a huge success!!
         </span>
       </div>
     </div><br>
-    <button class="btn btn-danger mb-3" style="border-radius:20px;color: #fff; "><a style="text-decoration: none;color: white;" href="https://www.facebook.com/Alphatech2k20">Like Us</a></button>
+  <center>  <button class="btn btn-danger mb-3" style="border-radius:20px;color: #fff; "><a style="text-decoration: none;color: white;" href="https://www.facebook.com/Alphatech2k20">Like Us</a></button></center>
   </div>
   
     <div class="toggle"></div>
@@ -121,7 +118,13 @@ Come join us and make this Alphatech a huge success!!
         });
       });
     </script>
-
+<script>
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");
+  });
+  
+</script>
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
