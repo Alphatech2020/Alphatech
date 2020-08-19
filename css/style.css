@@ -163,7 +163,17 @@ position: absolute;
 	
   }
  
- 
+ @media only screen and (min-width: 1000px) {
+	
+	.s_sujit{
+		padding:0px !important;
+	}
+	 .s_sujit:before{
+	 font-size: 50px !important;
+
+	line-height: 50px !important;
+	 }
+  }
  
   
 
