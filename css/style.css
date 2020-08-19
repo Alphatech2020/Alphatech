@@ -166,6 +166,12 @@ font-family: 'Oswald', sans-serif;
   .menu ul li a:hover:before {
 	transform: scaleX(1);
   }
+@media only screen and (min-width: 1200px) {
+	
+	.desc{
+		font-size: 40px;
+	}
+  }
   @media only screen and (min-width: 1200px) {
 	.team{
 	  left: 50px;
