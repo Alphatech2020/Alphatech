@@ -6,7 +6,7 @@ body{
 	width: 100%;
 	text-align: center;
 	background: black;
-	height: 100vh;
+	
 	display: table;
 }
 .no-js #loader { display: none;  }
