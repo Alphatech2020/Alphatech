@@ -173,8 +173,8 @@
 <center><ul id="clock">
 		<li id="demo"></li>
 	</ul></center>
-<div class="toggle" style="padding: 20px;"></div>
-<div class="overlay" style="font-size: 120px;line-height: 120px;"></div>
+<div class="toggles"></div>
+<div class="overlays"></div>
 <div class="menu">
 <ul>
 
@@ -188,9 +188,9 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
-$('.toggle').click(function(){
-$('.toggle').toggleClass('active');
-$('.overlay').toggleClass('active');
+$('.toggles').click(function(){
+$('.toggles').toggleClass('active');
+$('.overlays').toggleClass('active');
 $('.menu').toggleClass('active');
 });
 });
