@@ -78,7 +78,33 @@ path{
 	cursor: pointer;
 	z-index: 1;
   }
+.toggles {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+   padding:20px;
+	cursor: pointer;
+	z-index: 1;
+  }
   .toggle:before {
+	content: "+";
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 70px;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	line-height: 90px;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.2);
+	transition: 0.5s;
+  }
+ .toggles:before {
 	content: "+";
 	position: absolute;
 	top: 0;
@@ -98,6 +124,11 @@ path{
 	background: #ffeb3b;
 	color: #000;
   }
+ .toggles.active:before {
+	transform: rotate(405deg);
+	background: #ffeb3b;
+	color: #000;
+  }
   .overlay {
 	position: absolute;
 	top: 20px;
@@ -109,6 +140,22 @@ path{
 	transition: transform 0.5s;
   }
   .overlay.active {
+	width: 100%;
+	height: 100%;
+	
+	
+  }
+.overlays {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	
+	background: rgba(0, 0, 0, 0.9);
+	transition: transform 0.5s;
+  }
+  .overlays.active {
 	width: 100%;
 	height: 100%;
 	
